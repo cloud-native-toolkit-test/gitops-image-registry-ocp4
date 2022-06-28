@@ -1,0 +1,1 @@
+# gitops-image-registry-ocp4
