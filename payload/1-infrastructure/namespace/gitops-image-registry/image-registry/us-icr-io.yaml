@@ -1,0 +1,19 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: us-icr-io
+  namespace: gitops-image-registry
+spec:
+  encryptedData:
+    .dockerconfigjson: AgDCjECSwF++vAwXSukodWPa+K1K5w+KvU9wr1rCgcpGAREVwOgK9f808aNfjTPNFKbL+UBkkx/sUqwNE2ZYK/g27ESPEVoh/PfnYZDMb1yJkh2k49nGDAkLrmpS/0G6uAvkAe9pCdfRleeXVGgYVLqTFhE+/ca8hkUVSxhcgcHIjs0bgBMDXPc1LFR4dER5Z0ppkkghdXAVb4ZKM43B+5DvgzuYVfOR/bqRC04Ow7LwqVtJwU92VZe4iMPdnN9g2zL4TLtyQRXcBXVNGRkvQtX2lDZoGtvWfJBT/BWRBgTIlF7M3R3PVApFxf1O4NiuNRE90YWUp0n9kEiKLI7aL45cOqEYaPKxrq8/e88okvXBdRTCKPHbfFuj8YLWxha9P/dAWU1UOGpg16kcQZGUXyCqhU9vhkzSV86ECRBlOzcUMvIjJqd+hL+342GVLVS+UL26KP2rRDOHXkmQWqFsQldD9V//7xKgn1MeUcD6OXEtx8oeKB/FkcI/O7CD+IpyCg98u0wyCO0IxWDXbj9+ts/cs+IUCiM7NIP81jSCrqZBavCD3I+Mxsmoi0zuZUqqRjXYilIWBkIFVDAlFfTPNjryE+yKLlp+jGQxYao9/rhXLiTE+cDoU5uqYpAyXyLOQ5v7KQ1bk7WQXKpfDESL6s7U3fXlq+LaHs0k0X5fcmI89msymLlPkv/RvgYJMz5O776s5U0ZZfF+lt2qZ/IRZ4m/Uxuhj7fBdicGxgh6HeuHdhaSMluM4spaCCSA9jj0Lh5rO8btZWnUWDTlGLonKzRm+K0x4gYeFQaGJuCadGQwb1zhOaY7GnEvbqeSv76I21WKF20SNheHwitzdPocNb1Gdh63LZdbzhwTNpzexP7ih5pcA/Cs8LFvelSO3Vc2trvOPk8zrac8/tyvYaQydRvcMFkA8AKfWFnanHRQKHLdV0lrFIJoUkoMXmGcbg==
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      labels:
+        image-registry/push: "true"
+      name: us-icr-io
+      namespace: gitops-image-registry
+    type: kubernetes.io/dockerconfigjson
+
