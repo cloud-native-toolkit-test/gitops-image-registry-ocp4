@@ -1,0 +1,19 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: quay-io
+  namespace: gitops-image-registry
+spec:
+  encryptedData:
+    .dockerconfigjson: AgCTrbH2fTWjPLtKSslJ16RsCqOITmBLpXA7c7TubsKnMIodhrwmkWo7XcC6mUrKWQEi0OuIIhdhXpzIeM4OLR7/HrGMeRoK40SgoNEi+adYok/DN5rcse0wpOTfA0UrPvhfCocBMf7OPwtbbZ4Ua/sUlAR+Pn8KgMgRf+Q2sRuXCP/JYdBgyBEgQUElIVeQkjlgXTUP8ac/swD1DC6lXUE+N7wYTRb2aDID0bQpeTnQfDjvjlBWVpYaxXOeOKF0Fl73pc1DWYErTqWy+RRpVVWddpk1p0FMYge375DyTf/M0xbfDISyT++6N1VKzHh3ikQ6OIsG3VSvr8PvQbpM7Nu6DLKbwS8qzGX/kcKn3f39MqqVb/rkK6HSHriFfG9p9nvnMzSWsd+HATEEtFAxiTSt51Z9fauNYbAvaeXJm5UqE2yGhbK5vI+PAn5Gga27RDmL9GIAAE18qTg+hqeOTWegFwa+mX/W/acdlISiigo9e0EHEkpgpFx97iRFS+jOmH8FobV/UQA+KpZdUO1bONX9DEbORmLMgR3pKOf5/iDlEtWg98NgZtHquLxAj4G7xdQF2Gde1072evCYdr2fxWAkc0o+bSfonaNPcImv1T6PchGlW9SoIig5piXBCJixjfrR14VL8GXoyh/MBQCwuVBvfYK0UsYzGhvVZUHtTdT625NTo3X+RTfHrUIC+aPt/nrnjxAEHkvdKJN5ZfQMkjgCts/VJbtaMXr8legNhKAVXbZkuBMkMxfv6ZnlMSCNwkzJMoaOqczRUxFhdMOhtUFzF44kI6V0Uzaq6G9mKFO/PhR+S/HS8xgmM5yn1KKDVxCmeQ+yrNLQW8fioCthV6ciwCaDdOHXFWns2nQ48NGQo/hRopw7qeTtmzpkrCW3
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      labels:
+        image-registry/push: "true"
+      name: quay-io
+      namespace: gitops-image-registry
+    type: kubernetes.io/dockerconfigjson
+
