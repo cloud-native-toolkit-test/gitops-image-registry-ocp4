@@ -4,4 +4,3 @@ resources:
   - base/gitops-image-registry-image-registry.yaml
   - base/namespace-gitops-image-registry.yaml
   - base/openshift-marketplace-ibm-catalogs.yaml
-  - base/openshift-marketplace-ibm-entitlement-key.yaml
